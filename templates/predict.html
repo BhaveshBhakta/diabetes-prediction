@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diabetes Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/predict_style.css') }}">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Diabetes Prediction</h1>
+
+        <form method="POST" action="/predict">
+
+            <div class="form-group">
+                <label for="Pregnancies">Pregnancies</label>
+                <input type="number" step="any" id="Pregnancies" name="Pregnancies" required>
+            </div>
+            <div class="form-group">
+                <label for="Glucose">Glucose</label>
+                <input type="number" step="any" id="Glucose" name="Glucose" required>
+            </div>
+            <div class="form-group">
+                <label for="BloodPressure">Blood Pressure</label>
+                <input type="number" step="any" id="BloodPressure" name="BloodPressure" required>
+            </div>
+            <div class="form-group">
+                <label for="SkinThickness">Skin Thickness</label>
+                <input type="number" step="any" id="SkinThickness" name="SkinThickness" required>
+            </div>
+            <div class="form-group">
+                <label for="Insulin">Insulin</label>
+                <input type="number" step="any" id="Insulin" name="Insulin" required>
+            </div>
+            <div class="form-group">
+                <label for="BMI">BMI</label>
+                <input type="number" step="any" id="BMI" name="BMI" required>
+            </div>
+            <div class="form-group">
+                <label for="DiabetesPedigreeFunction">Diabetes Pedigree Function</label>
+                <input type="number" step="any" id="DiabetesPedigreeFunction" name="DiabetesPedigreeFunction" required>
+            </div>
+            <div class="form-group">
+                <label for="Age">Age</label>
+                <input type="number" step="any" id="Age" name="Age" required>
+            </div>
+
+            <button type="submit">Predict</button>
+
+            {% if result %}
+            <div class="result {% if 'has diabetes' in result %}positive{% else %}negative{% endif %}">
+                {{ result }}
+            </div>
+            {% endif %}
+
+        </form>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/predict_script.js') }}"></script>
+</body>
+
+</html>
