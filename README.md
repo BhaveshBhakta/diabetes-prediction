@@ -58,3 +58,15 @@ Follow these steps to set up and run the project on your local system:
 
 ## Contributing
 Contributions are welcome! Feel free to fork the repository, make improvements, and submit a pull request.
+
+## Website Overview
+
+![landingpage](https://github.com/user-attachments/assets/6921e60a-98b1-48fd-ba49-b2ef8f98686e)
+
+![servicepage](https://github.com/user-attachments/assets/ad07a1e9-13b9-4aa8-b7c4-2b83f7bb7ff9)
+
+![predictpage](https://github.com/user-attachments/assets/ff5b2adb-3100-457f-a3cc-cf0961eb2d7e)
+
+![predictionpage](https://github.com/user-attachments/assets/1bee9cbe-a7d5-4a51-b0b5-9ca238ce8b6c)
+
+
