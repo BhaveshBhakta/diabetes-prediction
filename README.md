@@ -57,6 +57,7 @@ Follow these steps to set up and run the project on your local system:
 5. Open your browser and go to `http://127.0.0.1:5000` to interact with the web application.
 
 ## Contributing
+
 Contributions are welcome! Feel free to fork the repository, make improvements, and submit a pull request.
 
 ## Website Overview
